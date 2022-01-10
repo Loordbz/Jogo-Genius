@@ -1,7 +1,7 @@
 body
 {
     margin: 0;
-    background-color: azure;
+    background-color: black;
 }
 
 .main-game
@@ -16,10 +16,10 @@ body
 .genius
 {
     display: grid;
-    grid-template-areas: 'lgreen lred ' 'lyellow lblue';
+    grid-template-areas: 'lgray lbrown ' 'lorange lblue';
     grid-gap: 10px;
-    border: 1px solid white;
-    background-color: white;
+    border: 1px solid black;
+    background-color: black;
     border-radius: 100%;
     width: 700px;
     height: 700px;
@@ -31,22 +31,22 @@ body
     background-color: blue;
     border-bottom-right-radius: 100%;
 }
-.red
+.brown
 {
-    grid-area: lred;
-    background-color: red;
+    grid-area: lbrown;
+    background-color: brown;
     border-top-right-radius: 100%;
 }
-.yellow
+.orange
 {
-    grid-area: lyellow;
-    background-color: yellow;
+    grid-area: lorange;
+    background-color: orange;
     border-bottom-left-radius: 100%;
 }
-.green
+.gray
 {
-    grid-area: lgreen;
-    background-color: green;
+    grid-area: lgray;
+    background-color: gray;
     border-top-left-radius: 100%;
 }
 

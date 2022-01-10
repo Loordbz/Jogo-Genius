@@ -8,9 +8,9 @@ let score = 0;
 // 3 = blue
 
 const blue = document.querySelector('.blue');
-const red = document.querySelector('.red');
-const green = document.querySelector('.green');
-const yellow = document.querySelector('.yellow');
+const brown = document.querySelector('.brown');
+const gray = document.querySelector('.gray');
+const orange = document.querySelector('.orange');
 
 //Cria order aleatória de cores
 let shuffleOrder = () => {
@@ -29,7 +29,7 @@ let lightColor = (element, number) => {
     time = 500;
     setTimeout(() => {
         element.classList.add('selected');
-    }, time-250);
+    }, time);
     setTimeout(() => {
         element.classList.remove('selected')
     });
@@ -65,11 +65,11 @@ let click = (color) => {
 //funcao que retorna a cor
 let createColorElement = (color) => {
     if(color == 0) {
-        return green;
+        return gray;
     } else if (color ==1) { 
-       return red; 
+       return brown; 
     } else if (color ==2) {
-        return yellow;
+        return orange;
     } else if (color == 3) {
         return blue;
     }
@@ -99,9 +99,9 @@ let playGame = () => {
 }
 
 //eventos de clique para as cores
-green.onclick = () => click(0);
-red.onclick = () => click(1);
-yellow.onclick = () => click(2);
+gray.onclick = () => click(0);
+brown.onclick = () => click(1);
+orange.onclick = () => click(2);
 blue.onclick = () =>click(3);
 
 //Incio do jogo
